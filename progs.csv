@@ -1,0 +1,28 @@
+xorg-minimal,X graphical server
+xrandr,display resolution tool
+xsetroot,root window parameter setting utility for X
+git,source version control
+vim,vi improved
+tmux,terminal multiplexer
+htop,terminal process manager
+mc,terminal file manager
+dunst,notifications daemon
+notify-osd,display notifications
+feh,image viewer and background tool
+dmenu,suckless tool for creating dynamic menus
+gentoo,a highly configurable file manager for X
+remmina,remote desktop client
+remmina-plugin-rdp,remmina plugin for rdp protocol
+zathura,customizable lightweight pdf reader
+zathura-djvu,djvu support for zathura
+zathura-pdf-mupdf,mupdf render pdf plugin for zathura
+zathura-ps,postscript support for zathura
+bash,bourne-again shell
+groff,front-end for the groff document formatting system
+pkgconf,a system for configuring build dependency information
+sudo,execute a command as another user
+ncurses,crt screen handling and optimization package
+compton,a compositor for X11
+firefox,web browser
+drm-kmod,intel integrated graphics driver
+ca_root_nss,root certificate bundle from the mozilla project
