@@ -33,6 +33,8 @@ static const unsigned int alphas[][3]      = {
 /* tagging */
 static const char *tags[] = { N_TERMINAL, N_FIREFOX, N_CODE, N_FOLDER, N_DESKTOP, N_GIT, N_C, N_PYTHON, N_SKYPE  };
 
+#include "shiftview.c";
+
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
@@ -103,6 +105,8 @@ static Key keys[] = {
 	{ MODKEY,                 XK_space,        setlayout,      {0} },
 	{ MODKEY|ShiftMask,       XK_space,        togglefloating, {0} },
 	{ MODKEY,                 XK_0,            view,           {.ui = ~0 } },
+	{ MODKEY,                 XK_Right,        shiftview,      {.i = +1 } },
+	{ MODKEY,                 XK_Left,         shiftview,      {.i = -1 } },
 	{ MODKEY|ShiftMask,       XK_0,            tag,            {.ui = ~0 } },
 	{ MODKEY,                 XK_comma,        focusmon,       {.i = -1 } },
 	{ MODKEY,                 XK_period,       focusmon,       {.i = +1 } },

@@ -70,6 +70,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 
 #include "selfrestart.c"
+#include "nextprevtag.c"
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
