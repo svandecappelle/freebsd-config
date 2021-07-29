@@ -3,10 +3,10 @@
 compton &
 feh --bg-scale ~/.config/wall.jpg
 
-RESET=""
-RED=""
-YELLOW=""
-GREEN=""
+RESET="\x01"
+RED="\x05"
+YELLOW="\x04"
+GREEN="\x03"
 
 function icon() {
    echo `printf "%b" "\\u$1"`
@@ -81,8 +81,6 @@ memory (){
        
 	if test "$_memory" -ge 80; then
 		COLOR=$RED
-        elif test "$_memory" -ge 60; then
-		COLOR=$YELLOW
         elif test "$_memory" -ge 50; then
 		COLOR=$YELLOW
         elif test "$_memory" -ge 1; then
